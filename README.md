@@ -2,7 +2,7 @@
 
 Product recommendation engine that actually works. Built this to understand how recommendation systems work under the hood — not just calling an API, but building the graph, running the math, and seeing why one approach beats another.
 
-**live demo:** https://smartshop-o63cyz8jh-sonalipatil14032001s-projects.vercel.app
+**Live demo:** https://smartshop-o63cyz8jh-sonalipatil14032001s-projects.vercel.app
 
 ## What It Does
 

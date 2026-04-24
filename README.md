@@ -2,6 +2,8 @@
 
 Product recommendation engine that actually works. Built this to understand how recommendation systems work under the hood — not just calling an API, but building the graph, running the math, and seeing why one approach beats another.
 
+**live demo:** https://smartshop-o63cyz8jh-sonalipatil14032001s-projects.vercel.app
+
 ## What It Does
 
 An e-commerce app where you log in, browse products, and get personalized recommendations. The interesting part is the ML layer — I tried three different approaches and benchmarked them against each other to pick the best one.

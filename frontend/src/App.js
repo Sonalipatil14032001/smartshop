@@ -36,6 +36,7 @@ function App() {
       );
       loadCart();
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user]);
 
   useEffect(() => {
@@ -43,11 +44,11 @@ function App() {
       getSimilarProducts(selectedProduct.id, 4).then((data) =>
         setSimilar(data.similar_products || [])
       );
-      // Record view interaction
       if (user) {
         recordInteraction(user.id, selectedProduct.id, "view");
       }
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedProduct]);
 
   const loadCart = async () => {

@@ -7,12 +7,12 @@ import {
 import "./App.css";
 import {
   Search, ShoppingCart, Star, LogOut, User, Sparkles,
-  TrendingUp, ArrowLeft, Trash2, X, Plus, Minus
+  TrendingUp, ArrowLeft, Trash2, X
 } from "lucide-react";
 
 function App() {
   const [user, setUser] = useState(null);
-  const [token, setToken] = useState(null);
+  const [token, setToken] = useState(null); // eslint-disable-line no-unused-vars
   const [products, setProducts] = useState([]);
   const [recommendations, setRecs] = useState([]);
   const [similarProducts, setSimilar] = useState([]);

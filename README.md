@@ -125,15 +125,15 @@ app runs on localhost:3000. demo accounts: alex@example.com / pass123 (tech buye
 
 ## Things I'd Improve 
 
-- [ ] add Node2Vec as a third model in the ensemble — random walk embeddings would capture structural patterns better than PageRank alone
-- [ ] swap seed data for a real dataset (Amazon product reviews or MovieLens adapted to products)
-- [ ] add proper JWT auth instead of the simple token system
-- [ ] track interactions in real-time and retrain the model periodically
-- [ ] add product images (right now it's text-only cards)
-- [ ] deploy with Docker Compose so the whole thing spins up in one command
+- [ ] Add Node2Vec as a third model in the ensemble — random walk embeddings would capture structural patterns better than PageRank alone
+- [ ] Swap seed data for a real dataset (Amazon product reviews or MovieLens adapted to products)
+- [ ] Add proper JWT auth instead of the simple token system
+- [ ] Track interactions in real-time and retrain the model periodically
+- [ ] Add product images (right now it's text-only cards)
+- [ ] Deploy with Docker Compose so the whole thing spins up in one command
 
 ## Takeways
 
-the biggest takeaway was that **no single model is best for everything**. PageRank is great for graph structure but can't learn latent patterns. SVD learns patterns but dies on cold start. the ensemble with RRF was simple to implement and gave better results than either one alone. that's why real recommendation systems at companies like Netflix or Amazon use ensembles — it's not about finding the perfect model, it's about combining imperfect ones.
+The biggest takeaway was that **no single model is best for everything**. PageRank is great for graph structure but can't learn latent patterns. SVD learns patterns but dies on cold start. the ensemble with RRF was simple to implement and gave better results than either one alone. that's why real recommendation systems at companies like Netflix or Amazon use ensembles — it's not about finding the perfect model, it's about combining imperfect ones.
 
 also learned that the gap between "I understand the theory" and "I can build it end-to-end" is bigger than I expected. connecting the ML service to a backend to a frontend to a database — each layer has its own quirks and failure modes. that's the part you don't get from reading papers.
